@@ -79,7 +79,6 @@ dependencies {
     implementation deps.lifecycle.livedata
     implementation deps.lifecycle.rx
 
-
     // Test
     androidTestImplementation deps.test.runner
     androidTestImplementation deps.test.rules
@@ -93,6 +92,7 @@ dependencies {
     implementation deps.github.glide
     annotationProcessor deps.github.glidecompailer
 
-    implementation 'com.google.dagger:dagger:2.31.2'
-    kapt 'com.google.dagger:dagger-compiler:2.31.2'
+    //dagger
+    implementation deps.dagger.dagger
+    kapt deps.dagger.compiler
 }

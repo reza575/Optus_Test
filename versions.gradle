@@ -21,6 +21,7 @@ versions.mockitokotlin = "1.6.0"
 versions.mockitoinline = "2.13.0"
 versions.glide = "4.8.0"
 versions.gson = "2.8.6"
+versions.dagger = "2.31.2"
 
 def langs = [:]
 langs.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
@@ -81,6 +82,10 @@ room.ktx = "androidx.room:room-ktx:$versions.room"
 room.compiler = "androidx.room:room-compiler:$versions.room"
 deps.room = room
 
+def dagger = [:]
+dagger.dagger = "com.google.dagger:dagger:$versions.dagger"
+dagger.compiler = "com.google.dagger:dagger-compiler:$versions.dagger"
+deps.dagger = dagger
 
 def test = [:]
 test.junit = "junit:junit:$versions.junit"
